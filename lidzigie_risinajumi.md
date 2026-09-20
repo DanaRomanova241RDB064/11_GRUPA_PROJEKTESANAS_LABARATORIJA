@@ -115,7 +115,3 @@ Avots: https://route4me.com/platform/route-planning-software
 | Izmaksu modelis | Atvērtā koda | Atkarīgs no izmantošanas | Komerciāls pakalpojums |
 | Piemērotība mācību projektam | Augsta | Vidēja | Vidēja |
 | Algoritma izpētes iespējas | Augstas | Ierobežotas | Ierobežotas |
-
-
-6. *Research on Vehicle Routing Problem with Time Windows Based on Improved Genetic Algorithm and Ant Colony Algorithm*. Electronics, 2025.
-   https://www.mdpi.com/2079-9292/14/4/647
