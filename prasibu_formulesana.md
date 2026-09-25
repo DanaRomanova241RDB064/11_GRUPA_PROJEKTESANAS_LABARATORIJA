@@ -150,6 +150,5 @@ MoSCoW metode tiek izmantota, lai noteiktu prasību nozīmīgumu un izdalītu si
 | **Should have** | Svarīgas funkcijas, bet sistēma var darboties arī bez tām | PR-09, PR-10, PR-11, PR-16, PR-17, PR-18 |
 | **Could have** | Papildu funkcijas, kuras var ieviest, ja ir pietiekami laika un resursu | PR-12, PR-13, PR-14 |
 | **Would have** | Funkcijas, kas šobrīd atrodas ārpus projekta tvēruma | Reāllaika satiksmes datu izmantošana, kurjera atrašanās vietas izsekošana un automātiska maršruta pārrēķināšana piegādes laikā |
-## 6. Would have prasības
 
-**Would have** prasības šajā projekta posmā atrodas ārpus projekta tvēruma. Tās varētu tikt apsvērtas nākamajās sistēmas versijās. Pie šādām funkcijām var pieskaitīt reāllaika satiksmes datu izmantošanu, kurjera atrašanās vietas izsekošanu un automātisku maršruta pārrēķināšanu piegādes laikā.
+
