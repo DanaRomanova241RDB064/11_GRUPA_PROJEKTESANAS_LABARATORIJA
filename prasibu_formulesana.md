@@ -1,6 +1,8 @@
 # Preču piegādes maršrutēšanas sistēmas prasības
 
-## Sistēmas funkcijas un iezīmes
+## 1. Sistēmas funkcijas un iezīmes
+
+Šajā sadaļā definētas preču piegādes maršrutēšanas sistēmas funkcionālās prasības. Prasības ir formulētas lietotāju stāstu veidā, norādot lietotāju, vēlamo darbību un darbības ieguvumu.
 
 ### PR-01 — Lietotāja autorizācija
 
@@ -37,17 +39,17 @@ Dispečers vēlas norādīt pieejamo kurjeru skaitu, jo maršruta aprēķinam j�
 
 **Prioritāte:** Must have.
 
-### PR-06 — Attālumu datu ievade
+### PR-06 — Attālumu datu izmantošana
 
 **Lietotāja stāsts:**  
-Dispečers vēlas ievadīt vai izmantot attālumu datus starp maršruta punktiem, jo attālumi ir nepieciešami piegādes maršruta aprēķināšanai.
+Dispečers vēlas izmantot attālumu datus starp maršruta punktiem, jo attālumi ir nepieciešami piegādes maršruta aprēķināšanai.
 
 **Prioritāte:** Must have.
 
 ### PR-07 — Maršruta aprēķināšana
 
 **Lietotāja stāsts:**  
-Dispečers vēlas aprēķināt optimālu piegādes maršrutu, jo nepieciešams noteikt klientu apmeklēšanas secību un samazināt kopējās maršruta izmaksas.
+Dispečers vēlas aprēķināt piegādes maršrutu, jo nepieciešams noteikt klientu apmeklēšanas secību.
 
 **Prioritāte:** Must have.
 
@@ -100,35 +102,60 @@ Dispečers vēlas dzēst nevajadzīgu maršrutu, jo sistēmā nav nepieciešams 
 
 **Prioritāte:** Could have.
 
-### PR-15 — Maršruta parametru mainīšana
+### PR-15 — Maršrutēšanas parametru ievade
+
+**Lietotāja stāsts:**  
+Dispečers vēlas norādīt maršrutēšanas parametrus, jo nepieciešams pielāgot maršruta aprēķinu konkrētajai piegādes situācijai.
+
+**Prioritāte:** Must have.
+
+### PR-16 — Maršrutu saraksta pārlūkošana
+
+**Lietotāja stāsts:**  
+Dispečers vēlas pārlūkot sistēmā izveidoto maršrutu sarakstu, jo nepieciešams ātri atrast un apskatīt konkrētu piegādes maršrutu.
+
+**Prioritāte:** Should have.
+
+### PR-17 — Piegādes klientu saraksta pārlūkošana
+
+**Lietotāja stāsts:**  
+Dispečers vēlas pārlūkot maršrutam pievienoto klientu sarakstu, jo nepieciešams pārbaudīt, kuri klienti ir iekļauti piegādes maršrutā.
+
+**Prioritāte:** Should have.
+
+### PR-18 — Maršruta parametru mainīšana
 
 **Lietotāja stāsts:**  
 Dispečers vēlas mainīt maršruta aprēķinam izmantotos parametrus, jo dažādām piegādes situācijām var būt nepieciešami atšķirīgi maršrutēšanas nosacījumi.
 
 **Prioritāte:** Should have.
 
-## Prasību prioritizēšana pēc MoSCoW metodes
 
-### Must have
+## 2. Prasību prioritizēšana pēc MoSCoW metodes
 
-Sistēmas minimāli nepieciešamās funkcijas ir lietotāja autorizācija, maršruta izveide, klientu un adrešu pievienošana, piegādes laika intervālu ievade, kurjeru skaita norādīšana, attālumu datu izmantošana, maršruta aprēķināšana un aprēķinātā maršruta attēlošana kartē.
+MoSCoW metode tiek izmantota, lai noteiktu prasību nozīmīgumu un izdalītu sistēmas minimāli nepieciešamo funkcionalitāti no papildu funkcijām.
 
-Šīs funkcijas veido sistēmas pamatfunkcionalitāti, jo bez tām nebūtu iespējams izveidot un aprēķināt preču piegādes maršrutu.
+| Prioritāte | Nozīme | Prasības |
+|---|---|---|
+| **Must have** | Funkcijas, kas nepieciešamas sistēmas pamatdarbībai | PR-01, PR-02, PR-03, PR-04, PR-05, PR-06, PR-07, PR-08, PR-15 |
+| **Should have** | Svarīgas funkcijas, bet sistēma var darboties arī bez tām | PR-09, PR-10, PR-11, PR-16, PR-17, PR-18 |
+| **Could have** | Papildu funkcijas, kuras var ieviest, ja ir pietiekami laika un resursu | PR-12, PR-13, PR-14 |
+| **Would have** | Funkcijas, kas šobrīd atrodas ārpus projekta tvēruma | Reāllaika satiksmes datu izmantošana, kurjera atrašanās vietas izsekošana un automātiska maršruta pārrēķināšana piegādes laikā |
 
-### Should have
+## 3. Must have prasības
 
-Svarīgas, bet ne absolūti nepieciešamas funkcijas ir maršruta grafiska attēlošana, maršruta efektivitātes rādītāju apskate, maršruta saglabāšana un maršruta aprēķina parametru mainīšana.
+**Must have** prasības veido sistēmas minimāli nepieciešamo funkcionalitāti. Tās nodrošina lietotāja autorizāciju, maršruta izveidi, klientu un piegādes informācijas ievadi, kurjeru skaita un maršrutēšanas parametru norādīšanu, kā arī piegādes maršruta aprēķināšanu un attēlošanu kartē.
 
-Šīs funkcijas uzlabo sistēmas izmantojamību un ļauj lietotājam labāk analizēt iegūto maršrutēšanas rezultātu.
+Bez šīm funkcijām nebūtu iespējams nodrošināt sistēmas galveno uzdevumu — preču piegādes maršruta izveidi un aprēķināšanu.
 
-### Could have
+## 4. Should have prasības
 
-Papildu funkcijas ir iepriekšējo maršrutu pārlūkošana, maršruta datu labošana un maršruta dzēšana.
+**Should have** prasības papildina sistēmas pamatfunkcionalitāti un uzlabo lietotāja iespējas analizēt un pārvaldīt izveidotos maršrutus. Šajā grupā ietilpst maršruta grafiska attēlošana, efektivitātes rādītāji, maršruta saglabāšana, maršrutu saraksta un klientu saraksta pārlūkošana, kā arī maršruta parametru mainīšana.
 
-Šīs funkcijas nav nepieciešamas minimālajai sistēmas darbībai, bet tās varētu uzlabot maršrutu pārvaldību.
+## 5. Could have prasības
 
-### Would have
+**Could have** prasības nav nepieciešamas sistēmas minimālajai darbībai, bet tās var uzlabot sistēmas lietojamību. Šajā grupā ietilpst iepriekšējo maršrutu pārlūkošana, maršruta datu labošana un maršruta dzēšana.
 
-Ārpus šī projekta tvēruma varētu palikt tādas funkcijas kā automātiska aktuālās satiksmes situācijas izmantošana maršruta aprēķinā, kurjera atrašanās vietas reāllaika izsekošana un automātiska maršruta pārrēķināšana piegādes laikā.
+## 6. Would have prasības
 
-Šīs funkcijas šajā projekta posmā netiek uzskatītas par nepieciešamām sistēmas pamatdarbībai.
+**Would have** prasības šajā projekta posmā atrodas ārpus projekta tvēruma. Tās varētu tikt apsvērtas nākamajās sistēmas versijās. Pie šādām funkcijām var pieskaitīt reāllaika satiksmes datu izmantošanu, kurjera atrašanās vietas izsekošanu un automātisku maršruta pārrēķināšanu piegādes laikā.
