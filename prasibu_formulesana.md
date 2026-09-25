@@ -34,6 +34,8 @@ Dispečers vēlas norādīt katra klienta piegādes laika intervālu, jo preces 
 
 ### PR-05 — Kurjeru skaita norādīšana
 
+Šī funkcija nodrošinās iespēju definēt konkrētu kurjeru skaitu, kas tiek izmantots noteiktas preču grupas piegādei uz kādu atrašanās vietu. Pieejamo kurjeru skaits rada ietekmi uz maršrutu aprēķināšanu, kas sistēmai norādīs, cik klientu var piešķirt katram kurjeram sistēmā. Kad ir norādīts kurjeru skaits, sistēma veidos piegādes maršrutu katram kurjeram, ņemot vērā pieejamo kurjeru skaitu, ja ir norādīti vairāki kurjeri, klientu apkalpošanas zvanus var sadalīt starp dažādiem maršrutiem, tas ir, aprēķinot maršrutus, mēs ņemam vērā ne tikai klientu atrašanās vietas, bet arī to, cik kurjeru ir pieejams.
+
 **Lietotāja stāsts:**  
 Dispečers vēlas norādīt pieejamo kurjeru skaitu, jo maršruta aprēķinam jāņem vērā pieejamie piegādes resursi.
 
@@ -41,12 +43,15 @@ Dispečers vēlas norādīt pieejamo kurjeru skaitu, jo maršruta aprēķinam j�
 
 ### PR-06 — Attālumu datu izmantošana
 
+Šī funkcija ļaus mums izmantot attālumu starp visiem punktiem, kas ir maršrutā, šie dati parādīs, cik tālu atrodas konkrēti klienti. Šie dai būs vajadzīgi, lai aprēķinātu maršrutu, jo mūsu sistēmai jāspēj salīdzināt dažādas iespējamās klientu apkalpošanas secības. Kad mēs lietojam šos datus, maršrutēša
 **Lietotāja stāsts:**  
 Dispečers vēlas izmantot attālumu datus starp maršruta punktiem, jo attālumi ir nepieciešami piegādes maršruta aprēķināšanai.
 
 **Prioritāte:** Must have.
 
 ### PR-07 — Maršruta aprēķināšana
+
+Šī funkcija automātiski aprēķinās piegādes maršrutus, izmantojot ievadītos datus un maršrutēšanas iestatījumus, tālāk apstrādās informāciju par klientiem, to atrašanās vietām, piegādes laika ierobežojumiem, kurjeru skaitu un attālumiem starp punktiem. Tādējādies tiks noskaidrots, kādi klienti tiks apmeklēti un kā tie tiks sadalīti kurjeriem. 
 
 **Lietotāja stāsts:**  
 Dispečers vēlas aprēķināt piegādes maršrutu, jo nepieciešams noteikt klientu apmeklēšanas secību.
@@ -55,12 +60,16 @@ Dispečers vēlas aprēķināt piegādes maršrutu, jo nepieciešams noteikt kli
 
 ### PR-08 — Maršruta attēlošana kartē
 
+Šī funkcija rādīs maršrutu uz kartes, parādīs visus klientus, kas ietilpst maršrutā, un savienojumus starp tiem, lai lietotājs viegli redzētu, kā notiek piegāde. Kartes veidā būs vieglāk pārskatāms un pārbaudāms,  vai maršruts izskatās pareizi, vai tas atbilst plānotajam ceļam, kā arī vieglāk redzami sākuma un beigu punkti, kur atrodas klienti un kādā secībā tie tiks apmeklēti.
+
 **Lietotāja stāsts:**  
 Dispečers vēlas apskatīt aprēķināto maršrutu kartē, jo nepieciešams vizuāli pārbaudīt plānoto piegādes ceļu.
 
 **Prioritāte:** Must have.
 
 ### PR-09 — Maršruta grafiska attēlošana
+
+Šī funkcija parādīs aprēķināto maršruta attēlu kā grafu, tur tiks rādīti maršruta punkti kā virsotnes un savienojumi starp tiem kā posmu. Grafiskais attēlojums vairāk ir paredzēts maršruta analīzei, kas ļauj salīdzināt, kā maršruta struktūra izskatās, un redzēt, kādā secībā klienti tiek apmeklēti. 
 
 **Lietotāja stāsts:**  
 Dispečers vēlas apskatīt maršrutu grafiskā veidā, jo nepieciešams pārskatīt klientu un maršruta punktu savstarpējo secību.
@@ -141,21 +150,6 @@ MoSCoW metode tiek izmantota, lai noteiktu prasību nozīmīgumu un izdalītu si
 | **Should have** | Svarīgas funkcijas, bet sistēma var darboties arī bez tām | PR-09, PR-10, PR-11, PR-16, PR-17, PR-18 |
 | **Could have** | Papildu funkcijas, kuras var ieviest, ja ir pietiekami laika un resursu | PR-12, PR-13, PR-14 |
 | **Would have** | Funkcijas, kas šobrīd atrodas ārpus projekta tvēruma | Reāllaika satiksmes datu izmantošana, kurjera atrašanās vietas izsekošana un automātiska maršruta pārrēķināšana piegādes laikā |
-
-## 3. Must have prasības
-
-**Must have** prasības veido sistēmas minimāli nepieciešamo funkcionalitāti. Tās nodrošina lietotāja autorizāciju, maršruta izveidi, klientu un piegādes informācijas ievadi, kurjeru skaita un maršrutēšanas parametru norādīšanu, kā arī piegādes maršruta aprēķināšanu un attēlošanu kartē.
-
-Bez šīm funkcijām nebūtu iespējams nodrošināt sistēmas galveno uzdevumu — preču piegādes maršruta izveidi un aprēķināšanu.
-
-## 4. Should have prasības
-
-**Should have** prasības papildina sistēmas pamatfunkcionalitāti un uzlabo lietotāja iespējas analizēt un pārvaldīt izveidotos maršrutus. Šajā grupā ietilpst maršruta grafiska attēlošana, efektivitātes rādītāji, maršruta saglabāšana, maršrutu saraksta un klientu saraksta pārlūkošana, kā arī maršruta parametru mainīšana.
-
-## 5. Could have prasības
-
-**Could have** prasības nav nepieciešamas sistēmas minimālajai darbībai, bet tās var uzlabot sistēmas lietojamību. Šajā grupā ietilpst iepriekšējo maršrutu pārlūkošana, maršruta datu labošana un maršruta dzēšana.
-
 ## 6. Would have prasības
 
 **Would have** prasības šajā projekta posmā atrodas ārpus projekta tvēruma. Tās varētu tikt apsvērtas nākamajās sistēmas versijās. Pie šādām funkcijām var pieskaitīt reāllaika satiksmes datu izmantošanu, kurjera atrašanās vietas izsekošanu un automātisku maršruta pārrēķināšanu piegādes laikā.
