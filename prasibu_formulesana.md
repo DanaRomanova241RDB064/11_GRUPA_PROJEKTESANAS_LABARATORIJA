@@ -114,7 +114,7 @@ Dispečers vēlas dzēst nevajadzīgu maršrutu, jo sistēmā nav nepieciešams 
 ### PR-15 — Maršrutēšanas parametru ievade
 
 **Lietotāja stāsts:**  
-Šī funkcija ļaus dispečeram norādīt parametrus, kas jāņem vērā, aprēķinot piegādes maršrutu. Maršrutēšanas parametri ļaus pielāgot maršruta aprēķinu konkrētajai piegādes situācijai un noteikt nosacījumus, pēc kuriem jāveido klientu apmeklēšanas secība un piegādes maršruti.
+Dispečers vēlās norādīt parametrus, kas jāņem vērā, aprēķinot piegādes maršrutu. Maršrutēšanas parametri ļaus pielāgot tā aprēķinu konkrētajai piegādes situācijai un noteikt nosacījumus, pēc kuriem jāveido klientu apmeklēšanas secība un piegādes maršruti.
 
 **Prioritāte:** Must have.
 
