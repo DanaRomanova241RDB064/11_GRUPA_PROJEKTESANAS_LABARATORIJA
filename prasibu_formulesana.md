@@ -6,12 +6,15 @@
 
 ### PR-01 — Lietotāja autorizācija
 
+Šī funkcija ļaus sistēmas lietotājam pieteikties sistēmā ar lietotājvārdu un paroli. Piekļuve maršrutu datiem un funkcijām varēs iegūt tikai autorizēts lietotājs. Neautorizētam lietotājam sistēmas funkcionalitāte nav pieejama.
+
 **Lietotāja stāsts:**  
 Dispečers vēlas reģistrēties un pieteikties sistēmā, jo maršrutu informācijai jābūt pieejamai tikai autorizētiem lietotājiem.
 
 **Prioritāte:** Must have.
 
 ### PR-02 — Maršruta izveide
+Šī funkcija ļaus lietotājam izveidot jaunu maršrutu, ar nepieciešamo  informāciju, lai varētu plānot preču piegādi vairākiem klientiem. Izveidotais maršruts būs saglabājams sistēmā un pieejams turpmākai rediģēšanai.
 
 **Lietotāja stāsts:**  
 Dispečers vēlas izveidot jaunu piegādes maršrutu, jo nepieciešams saplānot preču piegādi vairākiem klientiem.
@@ -20,12 +23,16 @@ Dispečers vēlas izveidot jaunu piegādes maršrutu, jo nepieciešams saplānot
 
 ### PR-03 — Klientu pievienošana maršrutam
 
+Šī funkcija ļaus lietotāja maršrutam pievienot vienu vai vairākus klientus, kas jāapkalpo šī maršruta ietvaros. Katram pievienotajam klientam jābūt identificējamam (piem., ar adresi vai nosaukumu).
+
 **Lietotāja stāsts:**  
 Dispečers vēlas pievienot maršrutam apmeklējamos klientus un viņu adreses, jo nepieciešams noteikt vietas, uz kurām jānogādā preces.
 
 **Prioritāte:** Must have.
 
 ### PR-04 — Piegādes laika ievade
+
+Šī funkcija ļaus lietotājam  norādīt piegādes laiku vai laika intervālu katram maršrutā iekļautajam klientam. Norādītā vērtība būs saglabāta kopā ar attiecīgo klientu un būs izmantojama turpmākā maršruta aprēķinā.
 
 **Lietotāja stāsts:**  
 Dispečers vēlas norādīt katra klienta piegādes laika intervālu, jo preces klientiem jānogādā noteiktajā laikā.
