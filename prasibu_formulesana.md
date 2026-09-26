@@ -113,12 +113,16 @@ Dispečers vēlas dzēst nevajadzīgu maršrutu, jo sistēmā nav nepieciešams 
 
 ### PR-15 — Maršrutēšanas parametru ievade
 
+Šī funkcija ļaus dispečeram norādīt parametrus, kas jāņem vērā, aprēķinot piegādes maršrutu. Maršrutēšanas parametri ļaus pielāgot maršruta aprēķinu konkrētajai piegādes situācijai un noteikt nosacījumus, pēc kuriem jāveido klientu apmeklēšanas secība un piegādes maršruti.
+
 **Lietotāja stāsts:**  
 Dispečers vēlās norādīt parametrus, kas jāņem vērā, aprēķinot piegādes maršrutu. Maršrutēšanas parametri ļaus pielāgot tā aprēķinu konkrētajai piegādes situācijai un noteikt nosacījumus, pēc kuriem jāveido klientu apmeklēšanas secība un piegādes maršruti.
 
 **Prioritāte:** Must have.
 
 ### PR-16 — Maršrutu saraksta pārlūkošana
+
+Šī funkcija ļaus dispečeram vienuviet apskatīt sistēmā izveidotos piegādes maršrutus. Maršrutu saraksts ļaus lietotājam ātri atrast nepieciešamo maršrutu un izvēlēties to detalizētākai apskatei, neievadot tā datus atkārtoti.
 
 **Lietotāja stāsts:**  
 Dispečers vēlas pārlūkot sistēmā izveidoto maršrutu sarakstu, jo nepieciešams ātri atrast un apskatīt konkrētu piegādes maršrutu.
@@ -127,12 +131,16 @@ Dispečers vēlas pārlūkot sistēmā izveidoto maršrutu sarakstu, jo nepiecie
 
 ### PR-17 — Piegādes klientu saraksta pārlūkošana
 
+Šī funkcija ļaus dispečeram apskatīt visus konkrētajam piegādes maršrutam pievienotos klientus. Tādējādi pirms maršruta aprēķināšanas vai izmantošanas būs iespējams pārbaudīt, vai maršrutā ir iekļauti nepieciešamie klienti un vai nav izlaists kāds piegādes punkts.
+
 **Lietotāja stāsts:**  
 Dispečers vēlas pārlūkot maršrutam pievienoto klientu sarakstu, jo nepieciešams pārbaudīt, kuri klienti ir iekļauti piegādes maršrutā.
 
 **Prioritāte:** Should have.
 
 ### PR-18 — Maršruta parametru mainīšana
+
+Šī funkcija ļaus dispečeram mainīt iepriekš norādītos maršrutēšanas parametrus, ja mainās piegādes nosacījumi. Pēc parametru izmaiņām būs iespējams atkārtoti veikt maršruta aprēķinu, izmantojot jaunos nosacījumus, lai iegūtu konkrētajai situācijai atbilstošu piegādes maršrutu.
 
 **Lietotāja stāsts:**  
 Dispečers vēlas mainīt maršruta aprēķinam izmantotos parametrus, jo dažādām piegādes situācijām var būt nepieciešami atšķirīgi maršrutēšanas nosacījumi.
